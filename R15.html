@@ -45,6 +45,7 @@
             color: #ffffff;
             margin-bottom: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
         }
 
         h2 {
@@ -63,7 +64,7 @@
             width: 200px;
             padding: 15px;
             text-align: center;
-            background-color: #001f23;
+            background-color: #5e0089;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: white;
             text-decoration: none;
@@ -88,15 +89,33 @@
 
         @media (orientation: landscape) {
             body {
-                background: linear-gradient(135deg, #007994, #0e1341);
+                background: linear-gradient(135deg, #570150, #260028);
             }
         }
 
         @media (orientation: portrait) {
             body {
-                background: linear-gradient(135deg, #e0fce4, #a8e6cf);
+                background: linear-gradient(135deg, #570150, #260028);
             }
         }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                height: 70px;
+                margin-bottom: 10px;
+            }
+
+            .wed {
+                font-size: 35px;
+                text-align: center;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -108,11 +127,11 @@
     </header>
 
     <main>
-        <h1 ">TRANSPORT MANAGEMENT SYSTEM</h1>
+        <h1>TRANSPORT MANAGEMENT SYSTEM</h1>
         <h2 >R15 BUS DETAILS</h2>
         <div class="button-container">
-            <a href="https://forms.gle/MJFC9A9At4mvHoij8" class="button">Bus Attendance Log</a>
-            <a href="loginwed.html" class="button">Entry & Exit Data</a>
+            <a href="https://docs.google.com/spreadsheets/d/1iJQ2-IStFWHCewET5WZeF6EsTdONo2qnMjDBF_7Ps-4/edit?gid=0#gid=0" class="button">Bus Attendance Log</a>
+            <a href="https://docs.google.com/spreadsheets/d/1eOR2db4T7W5UVXOgEyb8saJiwQx5JB8B1Z4Wa-W99G4/edit?usp=sharing" class="button">Entry & Exit Data</a>
             <a href="loginwed.html" class="button">Maintanence Details</a>
         </div>
     </main>
